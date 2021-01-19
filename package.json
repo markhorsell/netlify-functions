@@ -1,0 +1,27 @@
+{
+  "name": "netlify-functions",
+  "version": "1.0.0",
+  "description": "NETLIFY SERVERLESS TEST",
+  "main": "index.js",
+  "scripts": {
+    "dev": "netlify-lambda serve functions",
+    "build": "netlify-lambda build functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markhorsell/netlify-functions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markhorsell/netlify-functions/issues"
+  },
+  "homepage": "https://github.com/markhorsell/netlify-functions#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "netlify-lambda": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.21"
+  }
+}
