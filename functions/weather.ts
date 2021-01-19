@@ -3,7 +3,7 @@ const axios = require("axios");
 exports.handler = async event => {
 
 
-    //
+    //https://naughty-engelbart-6b8874.netlify.app/.netlify/functions/weather
     const getWeather = async () => {
     try {
      
