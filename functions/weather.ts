@@ -22,11 +22,11 @@ exports.handler = async event => {
      };
      const data = await getWeather();
  
-
+     console.log(data);
 
     return {
       statusCode: 200,
-      body: data
+      body: JSON.stringify(data)
     }
   }
 
