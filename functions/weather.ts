@@ -1,17 +1,20 @@
 const axios = require("axios");
+require('dotenv').config()
 
 exports.handler = async event => {
 
 
     //https://naughty-engelbart-6b8874.netlify.app/.netlify/functions/weather
+    console.log();
+    const url = "https://api.openweathermap.org/data/2.5/forecast?q=Cirencester&appid=" +
+    process.env["WEATHER"]+
+    '&units=metric'
     const getWeather = async () => {
     try {
-     
+        console.log(url);
         //forecast/hourly
         const resp = await axios.get(
-         "https://api.openweathermap.org/data/2.5/forecast?q=Cirencester&appid=" +
-           process.env["WEATHER"]+
-           '&units=metric'
+            url
        );
    
          // console.log(resp.data)
